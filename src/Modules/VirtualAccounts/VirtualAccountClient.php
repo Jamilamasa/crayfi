@@ -56,9 +56,9 @@ class VirtualAccountClient
     }
 
     /**
-     * Submit Wema OTP (two-step Wema flow)
+     * Submit Wema OTP to complete the two-step Wema flow
      *
-     * @param array $data
+     * @param array $data ['merchant_id', 'otp', 'customer_email']
      * @return array
      */
     public function submitOtp(array $data): array
